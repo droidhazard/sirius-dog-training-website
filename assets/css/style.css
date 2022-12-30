@@ -4,6 +4,11 @@
 /* Main Website Font Rubik*/
 @import url('https://fonts.googleapis.com/css2?family=Rubik:wght@300;400;500&display=swap');
 
+:root {
+  --text-black: #202020;
+  --text-grey: #4b4b4b;
+}
+
 * {
   margin: 0;
   padding: 0;
@@ -15,6 +20,12 @@ html,
 body {
   height: 100%;
   width: 100%;
+  background-color: black;
+  color: #fff;
+  font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+  font-size: 1rem;
+  font-weight: 400;
+  text-rendering: optimizeLegibility;
 }
 
 .BOLD {
@@ -37,4 +48,64 @@ body {
   font-weight: 300;
   letter-spacing: 1px;
   text-rendering: optimizeLegibility;
+}
+
+/* NAVBAR */
+nav.navbar {
+  height: 10vh;
+  max-height: 50px;
+  background-color: #fff;
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 10px;
+}
+
+.nav-logo-area {
+  color: var(--text-black);
+  font-weight: 500;
+  text-decoration: none;
+  font-size: 2rem;
+  letter-spacing: 2px;
+  text-rendering: geometricPrecision;
+  display: flex;
+  align-items: center;
+  transition: all 0.2s ease-out;
+}
+
+.nav-logo-area:hover {
+  letter-spacing: 50px;
+}
+
+.nav-links {
+  height: 100%;
+  gap: 30px;
+  display: flex;
+  align-items: center;
+}
+
+.nav-link {
+  text-decoration: none;
+  color: var(--text-grey);
+  letter-spacing: 1px;
+}
+
+.nav-active {
+  border-bottom: 2px solid #f23d5c;
+}
+
+.nav-link::after {
+  content: '';
+  display: block;
+  margin: left;
+  background-color: #f23d5c;
+  height: 2px;
+  width: 0;
+  left: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+.nav-link:hover:after {
+  width: 100%;
 }
