@@ -20,7 +20,6 @@ html,
 body {
   height: 100%;
   width: 100%;
-  color: #fff;
   font-family: 'Rubik', 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
   font-size: 1rem;
   font-weight: 400;
@@ -133,6 +132,19 @@ nav.navbar {
   color: #ffeef1;
 }
 
+/* HERO SECTION */
+.hero-section {
+  height: 100vh;
+  width: 100%;
+  background-image: url('../img/background-top.jpg');
+  background-size: cover;
+  background-attachment: fixed;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: all 0.2s ease-out;
+}
+
 
 
 
@@ -144,9 +156,15 @@ nav.navbar {
   .mobile-menu {
     display: none;
   }
+  .hero-section {
+    background-position: top;
+  }
 }
 @media screen and (max-width: 819px) {
   .show-on-lg {
     display: none;
+  }
+  .hero-section {
+    background-position: center;
   }
 }

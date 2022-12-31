@@ -27,3 +27,10 @@ document.querySelector('#nav-toggle').addEventListener('click', ()=> {
     menuIcon.classList.add('fa-bars')
   }
 })
+
+// Hero Section Parallax
+// const parallax = document.getElementById('hero-section')
+// window.addEventListener('scroll', ()=> {
+//   let offset = window.scrollY
+//   parallax.style.backgroundPositionY = offset * 0.7 + 'px'
+// })
