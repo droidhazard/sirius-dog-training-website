@@ -87,7 +87,8 @@ nav.navbar {
   color: var(--text-grey);
   letter-spacing: 1px;
   height: 100%;
-  margin: 0 10px;
+  margin: 0 8px;
+  padding: 0 2px;
   display: flex;
   align-items: center;
   transition: all 0.2s ease-in-out;
@@ -99,7 +100,7 @@ nav.navbar {
 
 .nav-active {
   color: #f23d5c;
-  border-bottom: 2px solid #f23d5c;
+  border-bottom: 3px solid #f23d5c;
 }
 
 .menu-icon {
@@ -134,37 +135,96 @@ nav.navbar {
 
 /* HERO SECTION */
 .hero-section {
-  height: 100vh;
+  /* height: 100vh; */
+  height: 100%;
   width: 100%;
+  padding: 20px 0;
   background-image: url('../img/background-top.jpg');
   background-size: cover;
   background-attachment: fixed;
   display: flex;
-  justify-content: center;
+  flex-direction: column;
   align-items: center;
   transition: all 0.2s ease-out;
+}
+
+.hero-heading {
+  margin-top: 3%;
+  color: burlywood;
+  color: #fff;
+  /* mix-blend-mode: overlay; */
+  font-size: 2.5rem;
+}
+
+/* HERO SECTION > PRICING TABLE */
+.pricing-cards {
+  margin: 5% auto;
+}
+
+.card {
+  width: 33%;
+  background-color: var(--text-black);
+  color: #fff;
+  margin-top: 2%;
+  box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
+  transition: 0.9s;
+  float: left;
+  padding: 2%;
+  width: 300px;
+  height: 400px;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding: 3%;
+  justify-content: space-between;
+}
+
+.card:nth-child(1),
+.card:nth-child(3) {
+  background-color: #fff;
+  color: var(--text-black);
 }
 
 
 
 
 /* Media Queries */
+/* PCs and Up */
 @media screen and (min-width: 820px) {
   .hide-on-lg {
     display: none;
   }
+
   .mobile-menu {
     display: none;
   }
+
   .hero-section {
     background-position: top;
   }
 }
+
+/* Tablets and Down */
 @media screen and (max-width: 819px) {
   .show-on-lg {
     display: none;
   }
+
   .hero-section {
     background-position: center;
+  }
+  .hero-heading {
+    text-align: center;
+    font-size: 1.5rem;
+  }
+
+
+  .pricing-cards {
+    display: flex;
+    flex-direction: column;
+  }
+
+  .card {
+    float: none;
   }
 }
