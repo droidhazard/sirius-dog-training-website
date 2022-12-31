@@ -162,27 +162,51 @@ nav.navbar {
 }
 
 .card {
-  width: 33%;
+  /* width: 33%; */
+  width: 300px;
+  height: 400px;
   background-color: var(--text-black);
   color: #fff;
+  padding: 5%;
+  border-radius: 5px;
   margin-top: 2%;
+  margin-bottom: 20px;
   box-shadow: 1px 1px 20px rgba(0, 0, 0, 0.5);
   transition: 0.9s;
   float: left;
-  padding: 2%;
-  width: 300px;
-  height: 400px;
   display: flex;
   flex-direction: column;
   align-items: center;
-  padding: 3%;
-  justify-content: space-between;
+  /* justify-content: space-between; */
 }
 
 .card:nth-child(1),
 .card:nth-child(3) {
   background-color: #fff;
   color: var(--text-black);
+}
+
+.card-heading {
+  font-size: 1.2rem;
+  font-weight: 500;
+}
+
+.card-description {
+  font-size: 0.9rem;
+}
+
+.card-price {
+  font-size: 2rem;
+  font-weight: 500;
+}
+
+button.book-class {
+  width: 100%;
+  height: 5vh;
+  border-radius: 30px;
+  border: none;
+  cursor: pointer;
+  font-size: 0.9rem;
 }
 
 
@@ -213,6 +237,7 @@ nav.navbar {
   .hero-section {
     background-position: center;
   }
+
   .hero-heading {
     text-align: center;
     font-size: 1.5rem;
