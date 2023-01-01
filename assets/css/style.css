@@ -189,6 +189,7 @@ nav.navbar {
 .card-heading {
   font-size: 1.2rem;
   font-weight: 500;
+  margin-bottom: 5px;
 }
 
 .card-description {
@@ -198,6 +199,16 @@ nav.navbar {
 .card-price {
   font-size: 2rem;
   font-weight: 500;
+  margin-top: 2rem;
+  margin-bottom: 3rem;
+}
+
+ul.card-info {
+  margin-bottom: auto;
+}
+
+ul.card-info>li {
+  list-style: none;
 }
 
 button.book-class {
@@ -209,6 +220,10 @@ button.book-class {
   font-size: 0.9rem;
 }
 
+.dark-btn {
+  background-color: var(--text-black);
+  color: #fff;
+}
 
 
 
